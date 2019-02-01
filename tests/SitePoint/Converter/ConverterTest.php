@@ -81,4 +81,11 @@ class ConverterTest extends TestCase {
         $this->assertEquals($output, $converter->convertString($input));
     }
 
+    public function testAddReturnsTheCorrectSum()
+    {
+        $converter = new Converter();
+        $this->assertEquals(4, $converter->add(2,2));
+        $this->assertEquals(8, $converter->add(3,5));
+    }
+
 }

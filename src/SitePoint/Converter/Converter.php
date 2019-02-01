@@ -9,4 +9,9 @@ class Converter
         $output = json_decode($input, true);
         return $output;
     }
+
+    public function add($a, $b)
+    {
+        return $a + $b;
+    }
 }
